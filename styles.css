@@ -18,3 +18,46 @@
   display: block;
   margin-bottom: 1rem;
 }
+/* Editorial refresh — additions scoped to the new sections. */
+.hero{display:block;min-height:0;padding:34px 5vw 76px;background:radial-gradient(circle at 55% 0%,rgba(199,154,91,.13),transparent 55%),#0f0f10}
+.hero-gallery{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,.7fr);gap:18px;max-width:1320px;margin:auto;align-items:stretch}
+.hero-gallery figure{position:relative;margin:0;overflow:hidden;border-radius:20px;background:#222;border:1px solid var(--line)}
+.hero-gallery img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-competition{height:min(67vw,670px)}
+.hero-competition img{object-position:center 38%}
+.hero-present{height:min(67vw,670px)}
+.hero-present img{object-position:center 25%}
+.hero-gallery figcaption{position:absolute;bottom:0;left:0;right:0;padding:38px 24px 20px;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#fff;font-weight:700}
+.hero-competition figcaption span,.hero-present figcaption span{display:block;color:var(--gold2);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}
+.hero-competition figcaption strong{display:block;font-family:'Playfair Display',Georgia,serif;font-size:1.5rem}
+.hero-intro{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end;max-width:1320px;margin:40px auto 0}
+.hero-intro h1{font-size:clamp(2.8rem,6vw,5.5rem);letter-spacing:-.025em}
+.hero-intro h1 em{font-style:normal;color:var(--gold2)}
+.hero-intro-copy p{font-size:1.08rem;color:var(--muted);margin:0}
+.hero-intro .hero-actions{margin-top:24px}
+.journey{display:grid;grid-template-columns:.75fr 1.25fr;gap:44px;align-items:center}
+.journey-copy p:not(.eyebrow){color:var(--muted);font-size:1.05rem;max-width:550px}
+.journey-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.journey-photos figure{margin:0;overflow:hidden;background:var(--charcoal);border:1px solid var(--line);border-radius:18px}
+.journey-photos img{width:100%;height:350px;object-fit:cover;object-position:center 25%}
+.journey-photos figcaption{padding:12px 14px;color:var(--muted);font-size:.83rem}
+.section-subtitle{color:var(--muted);max-width:700px}
+.transformation-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:start}
+.transformation{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--charcoal)}
+.transformation-images{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px}
+.transformation-images figure{position:relative;margin:0;min-width:0;overflow:hidden;border-radius:12px;background:#29292b}
+.transformation-images img{width:100%;height:360px;object-fit:contain;background:#29292b}
+.transformation-images figcaption{position:absolute;bottom:10px;left:10px;background:rgba(15,15,16,.85);border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:.8rem;font-weight:700}
+.transformation-text{padding:12px 24px 26px}
+.transformation-text h3{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.5rem,3vw,2.2rem)}
+.transformation-text blockquote{margin:14px 0 18px;color:var(--text);font-size:1.08rem;line-height:1.65}
+.transformation-text p:not(.eyebrow){color:var(--muted)}
+.review-details{border-top:1px solid var(--line);padding-top:15px}
+.review-details summary{color:var(--gold2);cursor:pointer;font-weight:700;list-style:none}
+.review-details summary::-webkit-details-marker{display:none}
+.review-details summary span{margin-left:5px}
+.review-full{padding-top:12px}
+.review-full p{font-size:.95rem;line-height:1.75;margin:0 0 14px}
+.results-note{font-size:.78rem;color:var(--muted);margin:16px 0 0}
+@media(max-width:850px){.hero{padding:22px 5vw 56px}.hero-gallery{grid-template-columns:1.3fr .7fr;gap:10px}.hero-competition,.hero-present{height:65vw;max-height:530px}.hero-gallery figcaption{padding:35px 10px 12px;font-size:.72rem}.hero-competition figcaption strong{font-size:1.05rem}.hero-intro{grid-template-columns:1fr;gap:18px;margin-top:28px}.hero-intro h1{font-size:clamp(2.5rem,9vw,4.5rem)}.journey{grid-template-columns:1fr;gap:24px}.journey-photos img{height:300px}.transformation-layout{grid-template-columns:1fr}.transformation-images img{height:320px}}
+@media(max-width:480px){.hero-gallery{grid-template-columns:1.45fr .65fr;gap:8px}.hero-competition,.hero-present{height:80vw}.hero-present img{object-position:48% center}.hero-competition figcaption strong{font-size:.94rem}.hero-present figcaption span{font-size:.65rem}.hero-gallery figcaption{font-size:.68rem}.journey-photos{gap:8px}.journey-photos img{height:215px}.journey-photos figcaption{font-size:.72rem;padding:9px}.transformation-images{gap:6px;padding:8px}.transformation-images img{height:245px}.transformation-text{padding:12px 18px 22px}}
